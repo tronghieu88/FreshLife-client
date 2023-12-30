@@ -1,0 +1,38 @@
+[
+  {
+    "image": "../../products/Promotion/img/Yen_mach_trai_cay.png",
+    "productname": "Yến mạch trái cây",
+    "discountedPrice": "70.000đ",
+    "price": "75.000đ"
+  },
+  {
+    "image":"../../products/Promotion/img/Yen_mach_mat_ong.png",
+    "productname": "Yến mạch mật ong",
+    "discountedPrice": "68.000đ",
+    "price": "72.000đ"
+  },
+  {
+    "image":"../../products/Promotion/img/Tuong_ca.png",
+    "productname": "Tương cà",
+    "discountedPrice": "25.000đ",
+    "price": "30.000đ"
+  },
+  {
+    "image":"../../products/Promotion/img/Yen_mach_nep_cam.png",
+    "productname": "Yến mạch nếp cẩm",
+    "discountedPrice": "50.000đ",
+    "price": "60.000đ"
+  },
+  {
+    "image":"../../products/Promotion/img/Thom_say_deo.png",
+    "productname": "Thơm sấy dẻo",
+    "discountedPrice": "40.000đ",
+    "price": "52.000đ"
+  },
+  {
+    "image":"../../products/Promotion/img/Thap_cam_say_gion.png",
+    "productname": "Thập cẩm sấy giòn",
+    "discountedPrice": "100.000đ",
+    "price": "120.000đ"
+  }
+]

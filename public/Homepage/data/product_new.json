@@ -1,0 +1,39 @@
+[
+    {
+      "imageUrl": "../../products/img/Roi_say_deo.png",
+      "productName": "Roi sấy dẻo",
+      "productPrice": "142.000",
+      "cornerImage": "../../component_sp/img/iconNew.png"
+    },
+    {
+      "imageUrl": "../../products/img/Oi_say_deo.png",
+      "productName": "Ổi sấy dẻo",
+      "productPrice": "68.000đ",
+      "cornerImage": "../../component_sp/img/iconNew.png"
+    },
+    {
+      "imageUrl": "../../products/img/Nuoc_mam_toi.png",
+      "productName": "Nước mắm tỏi",
+      "productPrice": "35.000đ",
+      "cornerImage": "../../component_sp/img/iconNew.png"
+    },
+    {
+      "imageUrl": "../../products/img/Bot_dau_xanh.png",
+      "productName": "Bột đậu xanh",
+      "productPrice": "40.000đ",
+      "cornerImage": "../../component_sp/img/iconNew.png"
+    },
+    {
+      "imageUrl": "../../products/img/Hat_Macca.png",
+      "productName": "Hạt Macca Odifood",
+      "productPrice": "130.000đ",
+      "cornerImage": "../../component_sp/img/iconNew.png"
+    },
+    {
+      "imageUrl": "../../products/img/Hat_dinh_duong.png",
+      "productName": "Hạt dinh dưỡng",
+      "productPrice": "290.000đ",
+      "cornerImage": "../../component_sp/imgiconNew.png"
+    }
+    
+  ]

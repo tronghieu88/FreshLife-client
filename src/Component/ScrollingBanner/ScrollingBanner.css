@@ -1,0 +1,30 @@
+.banner-container {
+    overflow: hidden;
+  }
+  
+  .banner {
+    display: flex;
+    transition: transform 3s linear;
+  }
+  
+  .hidden {
+    opacity: 0;
+    z-index: -1;
+    transition: transform 3s linear;
+  }
+  
+  .visible {
+    position: absolute;
+    opacity: 1;
+    transition: transform 3s linear;
+    
+  }
+  
+  .banner img {
+    margin-top: 50px;
+    margin-left: 105px;
+    width: 87%;
+    height: auto;
+    border: 1px solid #35A63B;
+  }
+  

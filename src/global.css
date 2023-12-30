@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+  font-size: 15px;
+}
+:root {
+  /* fonts */
+  --body-sp-gi-sp: "Work Sans";
+
+  /* font sizes */
+  --body-sp-gi-sp-size: 15px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-darkorange: #fc8b19;
+  --color-gainsboro: #d9d9d9;
+  --color-forestgreen: #35a647;
+  --color-black: #000;
+
+  /* Border radiuses */
+  --br-xs: 12px;
+  --br-xl: 20px;
+}

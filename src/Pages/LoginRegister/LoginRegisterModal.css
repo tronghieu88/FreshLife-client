@@ -1,0 +1,107 @@
+.login-register-modal {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin : 50px auto
+}
+.nav-tabs_log_res {
+    display: flex;
+}
+
+.tab_log_res {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+    float: left;
+    margin-right: 10px;
+}
+
+.nav-tabs_log_res.active {
+    background-color: #e0e0e0;
+}
+
+.tab-contents_log_res {
+    padding: 10px 0;
+}
+
+.tab-panes_log_res {
+    display: none;
+}
+
+.tab-panes_log_res.active {
+    display: block;
+}
+
+.form-groups_log_res {
+    margin-bottom: 15px;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.form-groups_log_res label {
+    display: block;
+    margin-bottom: 5px;
+    min-width: 150px;
+    font-weight: bolder;
+}
+.form-groups_log_res input {
+    /* padding: 8px 16px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 250px;
+}
+.password-input-containers_log_res {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.password-input-containers_log_res input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+.password-input-containers_log_res .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.buttons_log_res {
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 20%;
+    margin: 0 auto; /* Thêm dòng này để căn giữa theo chiều ngang */
+    display: block; /* Đảm bảo nút button là một phần tử block */
+}
+
+.buttons_log_res:hover {
+    background-color: #e16f12;
+}
+
+.registration-successs_log_res {
+    color: green;
+    text-align: center;
+}
+.title_log_res{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.center_login_gg{
+    text-align: center;
+}
+.required-field {
+    color: red;
+    margin-left: 5px; /* Để tạo khoảng cách giữa input và dấu '*' */
+    font-size: 18px; /* Điều chỉnh kích thước của dấu '*' */
+    font-weight: bold; /* Tùy chọn: làm đậm chữ '*' nếu cần thiết */
+}

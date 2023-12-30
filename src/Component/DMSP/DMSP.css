@@ -1,0 +1,42 @@
+.product_catalog {
+  width: 245px;
+  height: 360px;
+  background-color: rgba(243, 252, 242, 1);
+}
+.product_catalog h3 {
+  text-align: center;
+  border: 1px solid rgba(53, 166, 59, 1);
+  background-color: rgba(53, 166, 59, 1);
+  color: white;
+  padding: 5px;
+ 
+}
+.product_catalog li  {
+  color: rgba(102, 102, 102, 1);
+  margin: 26px 101px 26px 50px;
+  list-style-type: none; 
+  position: relative; 
+  text-decoration: none;
+  width: 90px;
+}
+.product_catalog li a  {
+ text-decoration: none;
+ color: rgba(102, 102, 102, 1);
+ width: fit-content;
+}
+
+.product_catalog li::before {
+  content: '';
+  position: absolute; 
+  top: 50%; 
+  left: -30px; 
+  transform: translateY(-50%) rotate(45deg); 
+  width: 6px; 
+  height: 6px; 
+  border-top: 2px solid rgba(53, 166, 71, 1); 
+  border-right: 2px solid rgba(53, 166, 71, 1); 
+}
+.product_catalog li a:hover {
+  color: rgba(53, 166, 71, 1);
+  cursor: pointer;
+}

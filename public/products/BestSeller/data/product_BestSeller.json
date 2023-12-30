@@ -1,0 +1,75 @@
+[
+    {
+      "imageUrl": "../../products/BestSeller/img/Bong_atiso_say_kho.png",
+      "productName": "Hạt điều rang muối",
+      "productPrice": "120.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Dau_dua.png",
+      "productName": "Dầu dừa",
+      "productPrice": "73.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Hat_chia.png",
+      "productName": "Hạt chia hữu cơ",
+      "productPrice": "148.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Rau_cu_say_kho.png",
+      "productName": "Rau củ sấy khô",
+      "productPrice": "40.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Hong_treo_gio.png",
+      "productName": "Hồng treo gió",
+      "productPrice": "230.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Dua_luoi.png",
+      "productName": "Dưa lưới",
+      "productPrice": "50.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Hat_diem_mach.png",
+      "productName": "Hạt diêm mạch",
+      "productPrice": "120.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Hat_de_cuoi.png",
+      "productName": "Hạt dẻ cười",
+      "productPrice": "250.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Cu_sen_say_gion.png",
+      "productName": "Củ sen sấy giòn",
+      "productPrice": "70.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Rau_cu_say_kho.png",
+      "productName": "Rau củ sấy khô",
+      "productPrice": "60.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Bot_yen_mach.png",
+      "productName": "Bột yến mạch",
+      "productPrice": "400.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    },
+    {
+      "imageUrl": "../../products/BestSeller/img/Bong_atiso_say_kho.png",
+      "productName": "Bông Atiso sấy khô",
+      "productPrice": "250.000đ",
+      "cornerImage": "../../../component_sp/img/iconBest-seller.png"
+    }
+    
+  ]

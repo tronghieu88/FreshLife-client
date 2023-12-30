@@ -1,0 +1,195 @@
+.page-heading-title-payment {
+    font-size: 20px;
+    margin-left: 5%;
+    border-bottom: 2px solid #35A647;
+  }
+
+.page-heading-payment {
+    margin-top: 20px;}
+
+    .heading-counter-payment {
+        border: 2px solid black;
+        padding: 0.5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        background: #35A647;
+        /* Các thuộc tính CSS khác tùy ý */
+      }
+      
+      .bold-text-payment {
+        font-weight: bold;
+      }
+
+      .panel-heading-payment {
+        border: 1px solid black;
+        margin-left: 5%;
+        margin-right: 5%;
+        background: #35A647;
+        margin-top: 20px;
+        
+      }
+
+      .panel-heading-payment p{
+        color: white;
+        margin-left: 1%;
+        font-size: 16px;
+        margin-top: 1%;
+
+      }
+
+      .form-group-payment {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      
+      .form-group-payment label {
+        display: inline-block;
+      }
+
+      
+      .form-group-payment input {
+        margin-left: 10px;
+        margin-right: 5%;
+        margin-top: 10px;
+        width: 30%;
+        border: 1px solid black;
+        background-color: white;
+      }
+
+      .title-payment p {
+        margin-left: 5%;
+        margin-top: 20px;
+      }
+      
+     
+      .ghichu label{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+      }
+      
+      .table-payment {
+        width: 90%; 
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      
+      .table-payment th,
+      .table-payment td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      
+      .table-payment th {
+        background-color: #f2f2f2;
+      }
+      
+      .table-payment tfoot td {
+        /* text-align: right; */
+        font-weight: bold;
+        color: #e84d1c;
+        font-size: 20px;
+      }
+
+      .dong2-payment th{
+        background-color: white;
+        border: 1px solid black;
+      }
+
+      .payment-buttons-payment {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+        margin-top: 20px;
+      }
+      
+      .payment-button-payment{
+        background-color: #45a049;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      
+      .payment-button-payment:hover {
+        background-color: red;
+      }
+
+      .cancel-button-payment {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+
+      .cancel-button-payment:hover {
+        background-color: #45a049;
+      }
+
+      .form-container-payment {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .form-group-payment {
+        flex-basis: 50%;
+        padding: 10px;
+      }
+      
+      .require {
+        color: red;
+      }
+
+      .payment-options-payment {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      
+      .payment-options-payment label {
+        display: flex;
+        align-items: center;
+      }
+      
+      .payment-options-payment input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      .order-detail-content-shopping-card img {
+        width: 100px; /* Định nghĩa chiều rộng của hình ảnh */
+        height: auto; /* Đảm bảo tỷ lệ khung hình tự động được duy trì */
+      }
+
+      .cart_navigation_payment button{
+        background-color: #35A647;
+        margin-top: 20px;
+        margin-left: 87%;
+      }
+      
+      .cart_navigation_payment button:hover{
+        background-color: #45a049;
+      }
+
+      .form-payment {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      
+    

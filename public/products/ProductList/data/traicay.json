@@ -1,0 +1,99 @@
+[
+    {"id":1,
+    "imageUrl":"../../products/ProductList/img/buoi_nam_roi.png",
+    "productName": "Bưởi năm roi 1.1kg",
+    "productPrice":31000
+    },
+
+    {"id":2,
+    "imageUrl": "../../products/ProductList/img/chom_chom.png",
+    "productName": "Chôm chôm 0.9kg",
+    "productPrice": 32000
+},
+
+{"id":3,
+"imageUrl":"../../products/ProductList/img/dua_hau.png",
+"productName": "Dưa hấu không hạt",
+"productPrice": 20000
+},
+
+{"id":4,
+"imageUrl":"../../products/ProductList/img/dua_luoi.png",
+"productName":"Dưa lưới",
+"productPrice": 45000
+},
+
+{"id":5,
+"imageUrl":"../../products/ProductList/img/hong.png",
+"productName":"Hồng trứng Đà Lạt",
+"productPrice": 70000
+},
+
+{"id":6,
+"imageUrl":"../../products/ProductList/img/luu_ngot.png",
+"productName":"Lựu ngọt hạt mềm",
+"productPrice": 57000
+},
+
+{"id":7, 
+"imageUrl":"../../products/ProductList/img/mang_cut.png",
+"productName":"Măng cụt lái thiêu",
+"productPrice": 45000
+},
+
+{"id":8,
+"imageUrl":"../../products/ProductList/img/oi.png",
+"productName":"Ổi trân châu ruột đỏ",
+"productPrice": 31000
+},
+
+{"id":9,
+"imageUrl":"../../products/ProductList/img/sau_rieng.png",
+"productName":"Sầu riêng",
+"productPrice": 55000
+},
+
+{"id":10,
+"imageUrl":"../../products/ProductList/img/Sapoche.png",
+"productName":"Sapoche",
+"productPrice": 35000
+},
+
+{"id":11,
+"imageUrl":"../../products/ProductList/img/tao_ninh_thuan.png",
+"productName":"Táo Ninh Thuận",
+"productPrice": 21000
+},
+
+{"id":12,
+"imageUrl":"../../products/ProductList/img/thanh_long_ruot_đo.png",
+"productName":"Thanh Long ruột đỏ",
+"productPrice": 15000
+},
+
+{"id":13,
+"imageUrl":"../../products/ProductList/img/thom_nu_hoang.png",
+"productName":"Thơm nữ hoàng",
+"productPrice": 22000
+},
+
+{"id":14,
+"imageUrl":"../../products/ProductList/img/vu_sua_bo_hong.png",
+"productName":"Vú sữa bơ hồng",
+"productPrice": 45000
+},
+
+{"id":15,
+"imageUrl":"../../products/ProductList/img/vu_sua_tim.png",
+"productName":"Vú sữa tím túi",
+"productPrice": 79000
+},
+
+{"id":16,
+"imageUrl":"../../products/ProductList/img/xoai_keo.png",
+"productName":"Xoài keo",
+"productPrice": 25000
+} 
+]
+
+

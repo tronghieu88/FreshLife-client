@@ -1,0 +1,75 @@
+.account {
+    margin-left: 105px;
+    margin-right: 105px;
+    font-size: 15px;
+}
+.path-account a {
+    text-decoration: none;
+    color: black;
+}
+.path-account a:hover{
+    color: #35a63b;
+    cursor: pointer;
+}
+.link_account {
+    margin-top: 50px;
+    top: 55;
+    text-decoration: none;
+    color: #000000;
+
+    &:hover {
+        color: #35a63b;
+    };
+}
+.link_account:focus{
+    color: #35a63b;
+}
+.container_account {
+    display: flex;
+    margin-top: 30px;
+}
+
+.left_account {
+    flex: 1;
+}
+
+.center_account {
+    flex: 2;
+}
+
+.right_account {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.label_account {
+    min-width: 200px;
+    margin-top: 10px;
+}
+
+.input_account {
+    width: 350px;
+    box-sizing: border-box;
+}
+
+.img_account {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+}
+
+.button_account {
+    padding: 5px;
+    cursor: pointer;
+    background: #35a63b;
+    color: #ffffff;
+
+    &:hover {
+        background-color: #FC8B19; 
+        color: #FFFFFF; 
+    }
+}

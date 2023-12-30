@@ -1,0 +1,77 @@
+.container_productList {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.left-section_productList {
+  margin-left: 105px;
+  width: 200px;
+  flex-direction: row;
+}
+
+
+.right-section_productList {
+  flex-direction: column;
+}
+
+.sanpham-container_productList {
+  padding-top: 20px; /* Giảm khoảng cách từ trên xuống */
+  flex: 1;
+  padding-right: 20px;
+}
+
+.sanpham1_productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Điều chỉnh giá trị theo ý muốn của bạn */
+  padding-left: 20px; 
+  margin-left: 140px;
+  padding-top: 25px;
+  margin-bottom: 1px; /* Giảm khoảng cách giữa các dòng sản phẩm */
+}
+
+.sanpham_productList {
+  margin-left: 105px;
+  font-size: 15px;
+}
+
+.sanpham_productList a{
+  text-decoration: none;
+  color: black;
+}
+
+.sanpham_productList a:hover {
+  color: rgba(53, 166, 59, 1);
+  fill: rgba(53, 166, 59, 1);
+  cursor: pointer;
+}
+
+.tenDMContainer_productList {
+  display: flex;
+  align-items: center;
+}
+
+.tenDM_productList {
+  margin-left: 170px;
+  text-decoration: underline;
+  text-decoration-color: rgba(53, 166, 59, 1);
+}
+
+.tenDM_sortContainer_productList {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;                                                
+  margin-left: 525px; 
+}
+
+.tenDM_sortLabel_productList {
+  margin-right: 10px; 
+}
+
+.tenDM_sortInput_productList {
+  padding: 5px;
+  width: fit-content;
+  background-color: rgba(216, 216, 216, 1);
+}

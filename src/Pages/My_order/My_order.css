@@ -1,0 +1,84 @@
+.order {
+    max-width: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 15px;
+}
+
+.link_order {
+    margin-top: 50px;
+    top: 55px;
+    text-decoration: none;
+    color: #000000;
+
+    &:hover {
+        color: #35a63b;
+    };
+    &:focus{
+        color: #35a63b;
+    }
+}
+
+.container_order {
+    display: flex;
+    margin-top: 30px;
+}
+
+
+.filter-buttons-order button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    width: 25%;
+}
+
+.filter-buttons-order button:hover {
+    color: #35a63b;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-item img {
+    width: 120px;
+}
+
+.order-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.order-info .product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-info .product-details .status {
+    margin-top: 5px;
+}
+
+.order-info .product-details .quantity-price {
+    margin-top: 10px;
+}
+
+.order-info .product-details .quantity {
+    margin-bottom: 5px;
+}
+
+.order-info .total-order {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.order-item button {
+    align-self: flex-end;
+    background-color: #35a63b;
+    color: white;
+    width: 120px;
+}

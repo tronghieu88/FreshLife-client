@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Lịch sử",
+        "content": "Freshlife bắt đầu từ một cửa hàng nhỏ chuyên cung cấp các loại rau củ quả sạch, tươi ngon. Trải qua hơn 8 năm phát triển, Freshlife đã mở rộng danh mục sản phẩm của mình với nhiều loại thực phẩm khác, bao gồm thịt, cá, trứng, sữa,... Tất cả sản phẩm của Freshlife đều được tuyển chọn kỹ lưỡng, đảm bảo mang đến những sản phẩm tươi ngon, chất lượng cao nhất.",
+        "thumb": "../Aboutus/img/lichsu.jpg"
+    },
+    {
+        "title": "Tầm nhìn",
+        "content": "Trở thành thương hiệu thực phẩm hàng đầu Việt Nam, mang đến cho khách hàng những sản phẩm tươi ngon, chất lượng cao, góp phần nâng cao chất lượng cuộc sống.",
+        "thumb": "../Aboutus/img/tamnhin.png"
+    },
+    {
+        "title": "Sứ mệnh",
+        "content": "Tận tâm mang đến cho khách hàng những sản phẩm tươi ngon, chất lượng cao, góp phần nâng cao sức khỏe và chất lượng cuộc sống.",
+        "thumb": "../Aboutus/img/sumenh.jpg"
+    },
+    {
+        "title": "Giá trị cốt lõi",
+        "content": "Tươi ngon - Chất lượng - Tận tâm",
+        "thumb": "../Aboutus/img/giatricotloi.jpg"
+    }
+]

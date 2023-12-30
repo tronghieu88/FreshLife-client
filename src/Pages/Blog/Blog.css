@@ -1,0 +1,87 @@
+/* .container_blog{
+  font-family: Work Sans;
+  
+} */
+.trangchu_blog{
+  margin-left: 105px;
+  font-size: 15px;
+}
+.trangchu_blog a {
+  text-decoration: none;
+  color: black;
+}
+
+.trangchu_blog a:hover {
+  color: rgba(53, 166, 59, 1);
+  fill: rgba(53, 166, 59, 1);
+  cursor: pointer;
+}
+
+.baiviet_blog{
+  margin-left: 122px;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: rgba(53, 166, 59, 1);
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+.img_blog {
+    margin-left: 110px;
+    width: 250px;
+    height: 139px;
+}
+
+.post-container_blog {
+    display: flex;
+    margin-bottom: 56px;
+    margin-right: 105px;
+    text-align: justify;
+  }
+  
+.post-item_blog{
+    margin-left: 48px;
+}
+
+.title_blog {
+  font-size: 20px;
+  font-weight: bold;
+  transition: font-size 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+.title_blog:hover{
+  cursor: pointer;
+}
+
+.sotrang-button_blog{
+  display: flex;
+  padding-bottom: '2px';
+  width: 40px; /* Đặt chiều rộng của button */
+  height: 40px; /* Đặt chiều cao của button */
+  background-color:rgba(53, 166, 59, 1) ;
+  color: white;
+  border: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Hiển thị hình con trỏ khi di chuột qua */
+}
+
+.sotrang-button_blog:hover {
+  background-color:rgba(252, 139, 25, 1);
+  color: white ;
+  cursor: pointer;
+}
+
+.width-hr_blog {
+  width: 85%; /* Hoặc giá trị chiều rộng mong muốn của bạn */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.custom-link_blog{
+  color: inherit; /* Giữ màu chữ như trước khi áp dụng link */
+  text-decoration: none; /* Loại bỏ dấu gạch chân */
+}

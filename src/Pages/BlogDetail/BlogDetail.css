@@ -1,0 +1,35 @@
+.title_blogdetail{
+  margin-left: 105px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.content_blogdetail{
+  margin:20px 105px;
+  text-align: justify;
+  margin-right: 105px;
+}
+
+.bold-paragraph_blogdetail{
+  font-weight: bold;
+}
+
+.img-blog_detail {
+  display: block;
+  margin: auto;
+}
+
+.trangchu_blogdetail{
+  margin-left: 105px;
+}
+
+.trangchu_blogdetail a {
+  text-decoration: none;
+  color: black;
+}
+
+.trangchu_blogdetail a:hover {
+  color: rgba(53, 166, 59, 1);
+  fill: rgba(53, 166, 59, 1);
+  cursor: pointer;
+}

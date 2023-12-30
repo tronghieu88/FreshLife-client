@@ -1,0 +1,58 @@
+.policy-container{
+    margin-left: 105px;
+    margin-right: 105px;
+    font-size: 15px;
+}
+.path-policy a{
+    text-decoration: none;
+    color: black;
+}
+.path-policy a:hover{
+    text-decoration: none;
+    color: #35A63B;
+}
+.title_policy{
+    display: flex;
+  align-items: center; 
+  justify-content: left;
+  background-color: #35A63B;
+  color: white;
+  border-radius: 5px; 
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+}
+.b_policy{
+  font-size: 20px;
+}
+.hr_policy{
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: black;
+}
+.text_policy{
+    margin:0
+}
+.link_policy {
+    margin-top: 50px;
+    top: 55;
+    text-decoration: none;
+    color: #000000;
+  }
+.link_policy:hover {
+    color: #35a63b;
+  }
+.titlebody_policy{
+  margin-top: 30px;
+  font-size: 18px;
+}
+.table_policy, th, td {
+  border:1px solid black;
+  padding: 10px;
+ 
+  text-align: center;
+}
