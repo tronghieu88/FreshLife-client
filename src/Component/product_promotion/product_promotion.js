@@ -3,13 +3,17 @@ import "./product_promotion.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { addOrder } from "../../Api/order";
+
 const PromotionProduct = ({ product }) => {
   const productChoose = product;
   const handleAddToCart = async () => {
-    console.log("first");
-    console.log(productChoose);
+    // console.log("first");
+    // console.log(productChoose);
     // console.log("test", window.localStorage.getItem("user_id"));
+
+    // lay "user_id" tu localStorage ra de su dung
     const user_id = window.localStorage.getItem("user_id");
+    // call api
     const respone = await addOrder(productChoose.productId, 1, user_id);
     console.log("respone", respone);
   };

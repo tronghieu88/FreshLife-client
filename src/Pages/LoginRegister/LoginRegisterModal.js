@@ -74,9 +74,11 @@ const LoginRegisterModal = () => {
     const password = e.target.elements.password.value;
 
     try {
+      // call api
       const response = await apiLogin(phoneNumber, password);
       if (response) {
         console.log(response);
+        // dua "user_id" vao localStorage
         window.localStorage.setItem("user_id", response.userLogin._id);
         // const test = window.localStorage.getItem("user_id");
         // console.log(test);

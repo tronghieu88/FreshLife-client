@@ -4,9 +4,12 @@ import callApi from "./api";
 
 // const { callApi, USER_ID } = api;
 
-async function getOrders() {
+async function getOrders(user_id) {
   try {
-    return await callApi(`/api/orders`, "GET");
+    const params = {
+      user_id: user_id,
+    };
+    return await callApi("/api/orders/", "POST", params);
     // return await callApi(`/api/orders/${USER_ID}`, 'GET');
   } catch (error) {
     console.error("Lỗi khi lấy đơn hàng:", error);
@@ -35,7 +38,7 @@ async function updateOrder(order_id, quantity) {
       quantity: quantity,
     };
 
-    return await callApi(`/api/orders/update`, "PUT", params);
+    return await callApi(`/api/orders/update`, "PATCH", params);
   } catch (error) {
     console.error("Lỗi khi cập nhật đơn hàng:", error);
   }

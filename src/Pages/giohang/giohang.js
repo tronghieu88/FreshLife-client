@@ -1,131 +1,134 @@
-import React, { useState, useEffect } from 'react';
-import './giohang.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
-
-
+import React, { useState, useEffect } from "react";
+import "./giohang.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { getOrders, updateOrder, deleteOrder } from "../../Api/order";
 const Cart = () => {
-    const [cart, setCart] = useState([]);
-  
-    useEffect(() => {
-      loadCart();
-    }, []);
-  
-    const Item = ({ name, price, count, img, id }) => {
-      return {
-        name,
-        price,
-        count,
-        img,
-        id,
-      };
-    };
+  const [cart, setCart] = useState();
 
-    const adjustItemCount = (id, count) => {
-      const updatedCart = cart.map((item) => {
-        if (item.id === id) {
-          return { ...item, count: item.count + count };
-        }
-        return item;
-      });
-    
-      setCart(updatedCart);
-      saveCart();
-    };
-  
-    const saveCart = () => {
-      localStorage.setItem('shoppingCart', JSON.stringify(cart));
-    };
-  
-    const loadCart = () => {
-      const savedCart = JSON.parse(localStorage.getItem('shoppingCart'));
-      setCart(savedCart || []);
-    };
-  
-    const addItemToCart = (name, price, count, img, id) => {
-      for (let i in cart) {
-        if (cart[i].id === id) {
-          cart[i].count += count;
-          saveCart();
-          return;
-        }
-      }
-      
-      
+  useEffect(() => {
+    // fetchData();
+    //Load cart
+    loadCart();
+    // totalPriceProduct();
+  }, []);
 
-      const item = Item({ name, price, count, img, id });
-      const updatedCart = [...cart, item];
-      setCart(updatedCart);
-      saveCart();
-    };
-  
-    const setCountForItem = (id, count) => {
-      const updatedCart = cart.map((item) => {
-        if (item.id === id) {
-          return { ...item, count };
-        }
-        return item;
-      });
-      setCart(updatedCart);
-      saveCart();
-    };
-  
-    const removeItemFromCart = (id) => {
-      const updatedCart = cart
-        .map((item) => {
-          if (item.id === id) {
-            return { ...item, count: item.count - 1 };
-          }
-          return item;
-        })
-        .filter((item) => item.count !== 0);
-  
-      setCart(updatedCart);
-      saveCart();
-    };
-  
-    const removeItemFromCartAll = (id) => {
-      const updatedCart = cart.filter((item) => item.id !== id);
-      setCart(updatedCart);
-      saveCart();
-    };
-  
-    const clearCart = () => {
-      setCart([]);
-      saveCart();
-    };
-  
-    const countCart = () => {
-      let totalCount = 0;
-      for (let i in cart) {
-        totalCount += cart[i].count;
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await fetch('/products/ProductList/data/traicay.json');
+  //     const data = await response.json();
+  //     setCart(data.map((item) => ({ ...item, quantity: 0, total: 0, selected: false })));
+  //   } catch (error) {
+  //     console.log('Error fetching data:', error);
+  //   }
+  // };
+
+  const loadCart = async () => {
+    // console.log("ok");
+    // Load user_id from localStorage
+    // lay user tu localStorage
+    const user = window.localStorage.getItem("user_id");
+    // console.log(user);
+
+    // call api getOrders
+    const cartItems = await getOrders(user);
+    console.log(cartItems);
+    // const savedCart = JSON.parse(localStorage.getItem('shoppingCart'));
+    // set cart
+    setCart(
+      cartItems.orders.map((item) => ({
+        ...item,
+        // quantity: 0,
+        total: item.product_id.price * item.quantity,
+      }))
+    );
+  };
+
+  const adjustItemCount = async (id, count) => {
+    // const updatedCart = cart?.map((item) => {
+    //   if (item.id === id) {
+    //     const newCount = Math.max(item.quantity + count, 0);
+    //     const newTotal = item.productPrice * newCount;
+    //     return { ...item, quantity: newCount, total: newTotal };
+    //   }
+    //   return item;
+    // });
+    // setCart(updatedCart);
+    console.log(id, count);
+    const updatedCart = await updateOrder(id, count);
+    setCart(
+      updatedCart.orders.map((item) => ({
+        ...item,
+        // quantity: 0,
+        total: item.product_id.price * item.quantity,
+      }))
+    );
+  };
+  // const totalPriceProduct = async () => {
+  //   const respone = cart.orders;
+  //   console.log("first");
+  //   console.log(cart);
+  // };
+  const removeItemFromCart = async (id) => {
+    // const updatedCart = cart?.filter((item) => item.id !== id);
+    // call api
+    const updatedCart = await deleteOrder(id);
+    // setCart(updatedCart);
+    setCart(
+      updatedCart.orders.map((item) => ({
+        ...item,
+        // quantity: 0,
+        total: item.product_id.price * item.quantity,
+      }))
+    );
+  };
+
+  // const toggleProductSelection = (id) => {
+  //   const updatedCart = cart?.map((item) => {
+  //     if (item.id === id) {
+  //       return { ...item, selected: !item.selected };
+  //     }
+  //     return item;
+  //   });
+
+  //   setCart(updatedCart);
+  // };
+
+  const countCart = () => {
+    let totalCount = 0;
+    for (let i in cart) {
+      if (typeof cart[i].quantity === "number" && !isNaN(cart[i].quantity)) {
+        totalCount += cart[i].quantity;
       }
-      return totalCount;
-    };
-  
-    const totalCart = () => {
-      let totalCost = 0;
-      for (let i in cart) {
-        totalCost += cart[i].price * cart[i].count;
-      }
-      return totalCost.toFixed(0);
-    };
-  
-    const listCart = () => {
-      const cartCopy = [];
-      for (let i in cart) {
-        const item = cart[i];
-        const itemCopy = { ...item };
-        itemCopy.total = (item.price * item.count).toFixed(0);
-        cartCopy.push(itemCopy);
-      }
-      return cartCopy;
-    };
+    }
+    return totalCount;
+  };
+
+  // const totalCart = () => {
+  //   let totalCost = 0;
+  //   for (let i in cart) {
+  //     if (
+  //       typeof cart[i].productPrice === "number" &&
+  //       typeof cart[i].quantity === "number" &&
+  //       !isNaN(cart[i].productPrice) &&
+  //       !isNaN(cart[i].quantity)
+  //     ) {
+  //       totalCost += cart[i].productPrice * cart[i].quantity;
+  //     }
+  //   }
+  //   return totalCost.toFixed(2);
+  // };
+
+  const totalCart = () => {
+    const cartItem = cart;
+    var allTotal = 0;
+    cartItem?.map((item) => (allTotal += item.total));
+    console.log(allTotal);
+    return allTotal;
+  };
 
   return (
     <div>
-     
       <div className="columns-container-shopping-card">
         <div className="container" id="columns">
           <h2 className="page-heading-shopping-card">
@@ -133,10 +136,11 @@ const Cart = () => {
           </h2>
           <div className="page-content-shopping-card">
             <div className="heading-counter-shopping-card">
-              <span className="fa fa-shopping-cart"></span> Số sản phẩm trong giỏ hàng của bạn là: 
-              <span id="count-cart" style={{ fontWeight: 'bold' }}>
+              <span className="fa fa-shopping-cart"></span> Số sản phẩm trong
+              giỏ hàng của bạn là:{" "}
+              <span id="count-cart" style={{ fontWeight: "bold" }}>
                 {countCart()}
-              </span>{' '}
+              </span>{" "}
               <span> sản phẩm</span>
             </div>
             <div className="order-detail-content-shopping-card">
@@ -145,80 +149,76 @@ const Cart = () => {
                   <tr>
                     <th className="cart_product-shopping-cart">Hình ảnh</th>
                     <th>Tên sản phẩm</th>
-                    <th>Tình trạng</th>
                     <th>Giá tiền</th>
+                    <th>Tình trạng</th>
                     <th>Số lượng</th>
                     <th>Tổng </th>
-                    <th className="action-shopping-cart">
-                        <FontAwesomeIcon icon={faTrash} />
-                    </th>
+                    <th>Xóa</th>
+                    {/* <th>Chọn sản phẩm</th> */}
                   </tr>
                 </thead>
                 <tbody id="show-item-cart">
-                  {listCart().map((item) => (
+                  {cart?.map((item) => (
                     <tr key={item.id}>
                       <td className="cart_product-shopping-cart">
                         <a href="#">
-                          <img src={item.img} alt="Product" />
-                       </a>
+                          <img src={item.product_id.image_1} alt="Product" />
+                        </a>
                       </td>
                       <td className="cart_description-shopping-cart">
-                        <p className="product-name">{item.name}</p>
-                      </td>
-                      <td className="cart_avail-shopping-cart">
-                        <span className="label label-success">In stock</span>
+                        <p className="product-name">{item.product_id.name}</p>
                       </td>
                       <td className="price-shopping-cart">
-                        ${item.price.toFixed(2)}
+                        $
+                        {item.product_id.price
+                          ? item.product_id.price.toFixed(2)
+                          : ""}
+                      </td>
+                      <td className="tt">
+                        <p className="ttt">Còn hàng</p>
                       </td>
                       <td className="qty-shopping-cart">
                         <div className="quantity-control">
-                            <button
+                          <button
                             className="quantity-control-button"
-                            onClick={() => adjustItemCount(item.id, -1)}
-                            >
+                            onClick={() => adjustItemCount(item._id, -1)}
+                          >
                             -
-                            </button>
-                            <span className="quantity">{item.count}</span>
-                            <button
+                          </button>
+                          <span className="quantity">{item.quantity || 0}</span>
+                          <button
                             className="quantity-control-button"
-                            onClick={() => adjustItemCount(item.id, 1)}
-                            >
+                            onClick={() => adjustItemCount(item._id, 1)}
+                          >
                             +
-                            </button>
+                          </button>
                         </div>
-                    </td>
-                      <td className="price-shopping-cart">
-                        ${item.total}
                       </td>
-                      <td className="action-shopping-cart">
+                      <td className="total-shopping-cart">
+                        ${item.total ? item.total.toFixed(2) : ""}
+                      </td>
+                      <td className="remove-from-cart-shopping-cart">
                         <button
-                            className="btn btn-danger btn-xs-shopping-cart"
-                            onClick={() => removeItemFromCart(item.id)}
+                          className="remove-from-cart-button"
+                          onClick={() => removeItemFromCart(item._id)}
                         >
-                            Xóa
+                          <FontAwesomeIcon icon={faTrash} />
                         </button>
-                    </td>
+                      </td>
+                      {/* <td className="select-product-shopping-cart">
+                        <input
+                          type="checkbox"
+                          checked={item.selected}
+                          onChange={() => toggleProductSelection(item.id)}
+                        />
+                      </td> */}
                     </tr>
                   ))}
                 </tbody>
-                <tfoot>
-                  <tr>
-                    <td colSpan="2" rowspan="1"></td>
-                    <td colSpan="3">
-                      <strong>Tổng cộng</strong>
-                    </td>
-                    <td colSpan="1" id="total_price" style={{ fontWeight: 'bold', color: '#e84d1c', fontSize: '20px' }}>
-                      {totalCart()}
-                    </td>
-                    <td></td>
-                  </tr>
-                </tfoot>
               </table>
-              <div className="cart_navigation-shopping-card">
-              <a className="button-shopping-card" href="/Payment">
-                  Mua ngay
-                </a>
+              <div className="cart-total-shopping-cart">
+                <span className="cart-total-label">Tổng tiền:</span>
+                <span className="cart-total-value">${totalCart()}</span>
               </div>
             </div>
           </div>
@@ -228,4 +228,4 @@ const Cart = () => {
   );
 };
 
-export default Cart
+export default Cart;
